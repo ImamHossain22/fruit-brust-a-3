@@ -265,7 +265,8 @@
 
         <!-- deal of the day section -->
 
-        <section class="md:mx-12 md:mt-12 lg:mx-44 lg:mt-32 mb-12  flex flex-col-reverse lg:flex-row justify-between items-center gap-7 md:gap-14 lg:gap-28">
+        <section
+            class="md:mx-12 md:mt-12 lg:mx-44 lg:mt-32 mb-12  flex flex-col-reverse lg:flex-row justify-between items-center gap-7 md:gap-14 lg:gap-28">
 
             <div class="p-5 md:text-center lg:text-left">
                 <h1 class="text-5xl font-extrabold mb-6">
@@ -281,31 +282,321 @@
             <div>
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
-                        <span style="--value:15;"></span>
-                      </span>
-                      days
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
-                        <span style="--value:10;"></span>
-                      </span>
-                      hours
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
-                        <span style="--value:24;"></span>
-                      </span>
-                      min 
-                    </div> 
-                    <div class="flex flex-col">
-                      <span class="countdown font-mono text-5xl">
-                        <span style="--value:22;"></span>
-                      </span>
-                      sec
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
                     </div>
-                  </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:22;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- card section  -->
+        <section
+            class="border-red-200 border-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-5 lg:mx-44 justify-between">
+
+            <!-- card 1 -->
+
+            <div class="border-2 border-blue-800 rounded-xl shadow-slate-300 p-12 text-center">
+                <!-- drawer -->
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content flex flex-col items-center justify-center">
+                        <!-- card content -->
+
+                        <div>
+                            <img src="./images/fruit6.png" alt="">
+                            <h2>12.90$ - 18.85$</h2>
+                            <hr>
+                            <p>apple</p>
+
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                            </div>
+
+                        </div>
+
+                        <label for="my-drawer" class=" drawer-button text-rose-400">details</label>
+                    </div>
+                    <div class="drawer-side my-60">
+                        <label for="my-drawer" class="drawer-overlay"></label>
+                        <ul class="menu text-base-content">
+                            <!-- deatiles content here -->
+                            <div>
+
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure><img src="./images/fruit8.png" alt="" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title justify-center">
+                                            Red Dragon</h2>
+                                        <p>
+                                            Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.
+                                        </p>
+
+                                        <!-- rating -->
+                                        <div class="rating justify-center">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                        </div>
+
+                                        <div class="card-actions justify-center">
+                                            <button class="btn btn-outline btn-error">close</button>
+                                            <button class="btn btn-active bg-rose-400 text-white normal-case">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card 2 -->
+
+            <div class="border-2 border-blue-800 rounded-xl shadow-slate-300 p-12 text-center">
+
+                <!-- drawer -->
+
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content flex flex-col items-center justify-center">
+                        <!-- card content -->
+
+                        <div>
+                            <img src="./images/fruit7.png" alt="">
+                            <h2>12.90$ - 18.85$</h2>
+                            <hr>
+                            <p>Orange</p>
+
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                            </div>
+
+                        </div>
+
+                        <label for="my-drawer" class=" drawer-button text-rose-400">details</label>
+                    </div>
+                    <div class="drawer-side my-60">
+                        <label for="my-drawer" class="drawer-overlay"></label>
+                        <ul class="menu text-base-content">
+                            <!-- Sidebar content here -->
+                            <div>
+
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure><img src="./images/fruit7.png" alt="" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title justify-center">
+                                            Orange</h2>
+                                        <p>
+                                            Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.
+                                        </p>
+
+                                        <!-- rating -->
+                                        <div class="rating justify-center">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                        </div>
+
+                                        <div class="card-actions justify-center">
+                                            <button class="btn btn-outline btn-error">
+                                                close</button>
+                                            <button class="btn btn-active bg-rose-400 text-white normal-case">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card 3 -->
+
+            <div class="border-2 border-blue-800 rounded-xl shadow-slate-300  p-12 text-center">
+                <!-- drawer -->
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content flex flex-col items-center justify-center">
+                        <!-- card content -->
+
+                        <div>
+                            <img src="./images/fruit8.png" alt="">
+                            <h2>12.90$ - 18.85$</h2>
+                            <hr>
+                            <p>Dragon</p>
+
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                            </div>
+
+                        </div>
+
+                        <label for="my-drawer" class=" drawer-button text-rose-400">details</label>
+                    </div>
+                    <div class="drawer-side my-60">
+                        <label for="my-drawer" class="drawer-overlay"></label>
+                        <ul class="menu text-base-content">
+                            <!-- Sidebar content here -->
+                            <div>
+
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure><img src="./images/fruit8.png" alt="" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title justify-center">
+                                            Red Dragon</h2>
+                                        <p>
+                                            Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.
+                                        </p>
+
+                                        <!-- rating -->
+                                        <div class="rating justify-center">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                        </div>
+
+                                        <div class="card-actions justify-center">
+                                            <button class="btn btn-outline btn-error">close</button>
+                                            <button class="btn btn-active bg-rose-400 text-white normal-case">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card 4 -->
+
+
+            <div class="border-2 border-blue-800 rounded-xl shadow-slate-300 p-12 text-center">
+                <!-- drawer -->
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content flex flex-col items-center justify-center">
+                        <!-- card content -->
+
+                        <div>
+                            <img src="./images/fruit9.png" alt="">
+                            <h2>12.90$ - 18.85$</h2>
+                            <hr>
+                            <p>Banana</p>
+
+                            <!-- rating -->
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                            </div>
+
+                        </div>
+
+                        <label for="my-drawer" class=" drawer-button text-rose-400 ">details</label>
+                    </div>
+                    <div class="drawer-side my-60">
+                        <label for="my-drawer" class="drawer-overlay"></label>
+                        <ul class="menu text-base-content">
+                            <!-- Sidebar content here -->
+                            <div>
+
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure><img src="./images/fruit8.png" alt="" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title justify-center">
+                                            Red Dragon</h2>
+                                        <p>
+                                            Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.
+                                        </p>
+
+                                        <!-- rating -->
+                                        <div class="rating justify-center">
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400"
+                                                checked />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-rose-400" />
+                                        </div>
+
+                                        <div class="card-actions justify-center">
+                                            <button class="btn btn-outline btn-error">close</button>
+                                            <button class="btn btn-active bg-rose-400 text-white normal-case">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     </main>
 
